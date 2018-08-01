@@ -200,6 +200,7 @@ body{
     display: grid;
     grid-template-columns: 20% 1fr 1fr 1fr 1fr 20%;
 }
+
 .locations h3{
     color: white;
     text-decoration: underline;
@@ -235,4 +236,105 @@ footer{
     100%{
         opacity: 1;
     }
+}
+@media only screen and (max-width: 750px){
+    .video h1{
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 250px; 
+        width: 100%;  
+    }
+ 
+    .secondsection h1{
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        padding-top:260px;
+        font-size: 50px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        width: 100%;
+        opacity: 0; 
+        animation: 1.5s fadeIn .1s forwards;
+    }
+    .firstsection{
+        background-image: url("../img/concert1.jpg");
+        margin-top:50px;
+        height: 275px; 
+        width: 100%;  
+        text-align: center;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    }
+    .firstsection p{
+        font-family: 'Allura', cursive;
+        color: white;
+        font-size: 30px;
+        padding-top: 110px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        opacity: 0; 
+        animation: 1.5s fadeIn 1s forwards;
+    }
+    .secondsection h1{
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        padding-top:260px;
+        font-size: 60px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        opacity: 0; 
+        animation: 1.5s fadeIn .1s forwards;
+    }
+    .thirdsection h1{
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        padding-top:260px;
+        font-size: 60px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        opacity: 0; 
+        animation: 1.5s fadeIn .1s forwards;
+        width: 80%;
+        margin:0 auto;
+    }
+    .fourthsection h1{
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        padding-top:260px;
+        font-size: 60px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        opacity: 0; 
+        animation: 1.5s fadeIn .1s forwards;
+    }
+    .fifthsection h1{
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        padding-top:260px;
+        font-size: 60px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        opacity: 0; 
+        animation: 1.5s fadeIn .1s forwards;
+    }
+    .sixthsection h1{
+        color: white;
+        font-family: 'Barlow Condensed', sans-serif;
+        padding-top:260px;
+        font-size: 60px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        opacity: 0; 
+        animation: 1.5s fadeIn .1s forwards;
+    }
+    .contact{
+        grid-area: contact;
+    }
+    .footergrid{
+        grid-template-columns: 0% 1fr 1fr 1fr 1fr 0%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            ". . . . . ."
+            ". . contact contact contact ."
+   
+    }
+    .footergrid ul li{
+        font-size: 10px;
+    }
+
 }
